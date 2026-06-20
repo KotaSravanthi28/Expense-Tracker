@@ -1,5 +1,15 @@
 # 💰 Expense Tracker
 
+## Internship Submission
+
+ **Intern ID:** CITS1751
+ **Full Name:** KOTA SRAVANTHI
+ **No. of Weeks:** 8 Weeks 
+ **Project Name:** Expense Tracker – Personal Finance Management System
+ **Domain**: Full Stack Web Development
+
+## Project Scope
+
 A full-stack Expense Tracker application that helps users manage income, expenses, budgets, and savings goals through an interactive dashboard.
 
 ## 🚀 Features
@@ -9,6 +19,12 @@ A full-stack Expense Tracker application that helps users manage income, expense
 - User Login with JWT Authentication
 - Protected Routes
 - User Profile Management
+
+### Login and Registration Pages
+<p align="center">
+  <img src="screenshots/login.png" width="45%">
+  <img src="screenshots/register.png" width="45%">
+</p>
 
 ### Dashboard
 - Total Income Overview
@@ -83,6 +99,12 @@ A full-stack Expense Tracker application that helps users manage income, expense
 ## 🎥 Demo Video
 
 [Watch the Demo Video](demo/video.mp4)
+
+## 📄 Documentation
+
+Project Documentation:
+
+[Expense Tracker Documentation](documentation/ExpenseTracker.docx)
 
 ## 🛠️ Tech Stack
 
