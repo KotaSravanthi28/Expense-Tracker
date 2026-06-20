@@ -2,11 +2,11 @@
 
 ## Internship Submission
 
- **Intern ID:** CITS1751
- **Full Name:** KOTA SRAVANTHI
- **No. of Weeks:** 8 Weeks 
- **Project Name:** Expense Tracker – Personal Finance Management System
- **Domain**: Full Stack Web Development
+ - **Intern ID:** CITS1751
+ - **Full Name:** KOTA SRAVANTHI
+ - **No. of Weeks:** 8 Weeks 
+ - **Project Name:** Expense Tracker – Personal Finance Management System
+ - **Domain**: Full Stack Web Development
 
 ## Project Scope
 
