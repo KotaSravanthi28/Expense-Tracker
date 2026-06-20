@@ -20,6 +20,14 @@ A full-stack Expense Tracker application that helps users manage income, expense
 - Welcome Banner
 - Dark Mode Support
 
+### Dashboard
+
+<p align="center">
+  <img src="screenshots/dashboard.png" width="45%">
+  <img src="screenshots/dashboard1.png" width="45%">
+</p>
+
+
 ### Transactions
 - Add Income Transactions
 - Add Expense Transactions
@@ -27,6 +35,13 @@ A full-stack Expense Tracker application that helps users manage income, expense
 - Delete Transactions
 - Categorize Expenses
 - Transaction History
+
+### Transactions
+
+<p align="center">
+  <img src="screenshots/transactions.png" width="800">
+</p>
+
 
 ### Budget Management
 - Set Monthly Budget
@@ -48,11 +63,26 @@ A full-stack Expense Tracker application that helps users manage income, expense
 - Delete Savings Entries
 - Automatic Goal Progress Updates
 
+<p align="center">
+  <img src="screenshots/dashboard2.png" width="800">
+</p>
+
 ### Profile
 - View User Information
 - Edit Profile Details
 - Account Statistics
 - Dark Mode Preferences
+
+### Profile
+
+<p align="center">
+  <img src="screenshots/profile.png" width="800">
+</p>
+
+
+## 🎥 Demo Video
+
+[Watch the Demo Video](demo/video.mp4)
 
 ## 🛠️ Tech Stack
 
@@ -187,6 +217,10 @@ This project demonstrates:
 
 ## 👩‍💻 Author
 
-Kota Sravanthi
+KOTA SRAVANTHI
 
-Computer Science Engineering Student
+Computer Science & Systems Engineering Student
+
+## License
+
+This project is intended for educational and academic purposes.
