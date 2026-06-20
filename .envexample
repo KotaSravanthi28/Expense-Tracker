@@ -1,0 +1,13 @@
+
+//create .env file in backend based on your database
+
+import { createSecretKey } from "node:crypto"
+
+PORT=5000
+
+DB_HOST=//*your_databse_host*
+DB_USER=//*user name*
+DB_PASSWORD=//*database password*
+DB_NAME= //*datbase name*;
+
+JWT_SECRET=createSecretKey //*your_secret_key*

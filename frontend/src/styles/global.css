@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+   background:
+  linear-gradient(
+    135deg,
+    #f8fafc,
+    #e2e8f0
+  );
+  color: #1e293b;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+
+img {
+  max-width: 100%;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.summary-card,
+.chart-card,
+.stat-card {
+  transition: 0.3s;
+}
+
+.summary-card:hover,
+.chart-card:hover,
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .chart-card {
+    padding: 15px;
+  }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

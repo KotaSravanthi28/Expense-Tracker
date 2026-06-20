@@ -1,0 +1,523 @@
+/* Page Background */
+body {
+   background:
+  linear-gradient(
+    135deg,
+    #f8fafc,
+    #e2e8f0
+  );
+}
+
+.dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+
+.dashboard-title {
+  color: #111827;
+}
+
+/* Dark Mode */
+
+
+body.dark .dashboard-title {
+  color: white;
+}
+
+.dashboard-container.sidebar-open {
+  margin-left: 250px;
+}
+
+.sidebar.open ~ .dashboard-container {
+  margin-left: 220px;
+}
+
+/* Dashboard Cards Row */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.dashboard-title{
+  color: black;
+  font-size: 1,5rem;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+/* Stat Cards */
+.dashboard-cards > div {
+  flex: 1;
+  min-width: 240px;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dashboard-cards > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.15);
+}
+
+/* Stat Numbers */
+.summary-card h2,
+.stat-card h2,
+.BudgetCard {
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Card Titles */
+.summary-card h3,
+.stat-card h3 
+.BudgetCard{
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Charts Layout */
+.charts-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Shared Chart Card */
+.chart-card {
+  flex: 1;
+  min-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Chart Headings */
+.chart-card h2 {
+  margin-bottom: 20px;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Pie Chart */
+.pie-chart-container {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+/* Bar Chart */
+.bar-chart-container {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .chart-card {
+    min-width: 100%;
+  }
+
+  .pie-chart-container,
+  .bar-chart-container {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.welcome-banner {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  display: bloack;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.welcome-banner h2 {
+  margin: 0;
+}
+
+.welcome-banner p {
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.recent-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  margin-top: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.recent-item p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.recent-card h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.recent-card:hover {
+  transform: translateY(-4px);
+}
+
+
+
+/* =========================
+   SAVINGS GOAL CARD
+========================= */
+
+.goal-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-top: 25px;
+  width: 100%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease;
+}
+
+.goal-card:hover,
+.savings-card:hover {
+  transform: translateY(-3px);
+}
+
+.goal-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.goal-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.goal-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99,102,241,0.2);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.goal-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.goal-card button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* =========================
+   INFO SECTION
+========================= */
+
+.goal-card p {
+  margin: 12px 0;
+  font-size: 15px;
+  color: #334155;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  background: #e2e8f0;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #10b981,
+    #22c55e
+  );
+  transition: width 0.6s ease;
+}
+
+/* =========================
+   COMPLETION TEXT
+========================= */
+
+.goal-card .completion-text {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+/* =========================
+   SPECIAL VALUE COLORS
+========================= */
+
+.goal-card p:nth-child(odd) {
+  font-weight: 500;
+}
+
+.goal-card strong {
+  color: #111827;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .goal-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .goal-card h2 {
+    font-size: 22px;
+  }
+
+  .goal-card p {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .goal-card button {
+    font-size: 15px;
+  }
+}
+
+/* ==========================
+   SAVINGS ENTRIES CARD
+========================== */
+
+.savings-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.savings-card h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.savings-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.savings-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.savings-card button:hover {
+  opacity: 0.95;
+}
+
+/* ==========================
+   SAVINGS LIST
+========================== */
+
+.savings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.saving-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  border-left: 5px solid #6366f1;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.saving-item:hover {
+  transform: translateX(5px);
+}
+
+.saving-left h3 {
+  margin: 0;
+  color: #16a34a;
+  font-size: 20px;
+}
+
+.saving-left p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.saving-right {
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .saving-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .saving-right {
+    align-self: flex-end;
+  }
+}
+
+/* ==========================
+   SAVINGS SECTION
+========================== */
+
+.savings-section {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.savings-section .goal-card,
+.savings-section .savings-card {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 992px) {
+  .savings-section {
+    flex-direction: column;
+  }
+
+  .savings-section .goal-card,
+  .savings-section .savings-card {
+    width: 100%;
+  }
+}
+
+.delete-saving {
+  background: #ef4444;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-top: 8px;
+}
+
+.delete-saving:hover {
+  opacity: 0.9;
+}
